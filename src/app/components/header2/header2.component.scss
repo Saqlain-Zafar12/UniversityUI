@@ -1,0 +1,34 @@
+a{
+    color: white !important;
+}
+.navbar{
+    height: 90px;
+}
+a:hover{
+    color: #00a2dd !important;
+}
+.Register{
+    border: #00a2dd 1px solid !important;
+    color: #00a2dd;
+}
+.Register:hover{
+    background-color: #00a2dd;
+}
+.logIn:hover{
+    color: #00a2dd !important;
+    background-color: transparent !important;
+}
+.fa-docker{
+    color: #00a2dd;
+    font-size: 26px;
+}
+.san{
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.ml{
+    margin-left: 25px !important;
+}
+.fa-docker{
+    cursor: pointer;
+}
