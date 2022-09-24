@@ -10,13 +10,14 @@
                     <div class="card-body text-center">
                       <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar"
                         class="rounded-circle img-fluid" style="width: 150px;">
-                      <h5 class="my-3">John Smith</h5>
-                      <p class="text-muted mb-1">Full Stack Developer</p>
-                      <p class="text-muted mb-4">Bay Area, San Francisco, CA</p>
-                      <div class="d-flex justify-content-center mb-2">
+                      <h5 class="my-3">{{ user.firstName}} {{ user.lastName }}</h5>
+                      
+                      <p class="text-muted mb-1">{{user.cnic}}</p>
+                      <p class="text-muted mb-4">{{user.address}}</p>
+                      <!-- <div class="d-flex justify-content-center mb-2">
                         <button type="button" class="btn btn-primary">Follow</button>
                         <button type="button" class="btn btn-outline-primary ms-1">Message</button>
-                      </div>
+                      </div> -->
                     </div>
                   </div>
                   <div class="card mb-4 mb-lg-0">
@@ -54,7 +55,7 @@
                           <p class="mb-0">Full Name</p>
                         </div>
                         <div class="col-sm-9">
-                          <p class="text-muted mb-0">Johnatan Smith</p>
+                          <p class="text-muted mb-0">{{user.firstName}} {{user.lastName}}</p>
                         </div>
                       </div>
                       <hr>
@@ -63,7 +64,7 @@
                           <p class="mb-0">Email</p>
                         </div>
                         <div class="col-sm-9">
-                          <p class="text-muted mb-0">example@example.com</p>
+                          <p class="text-muted mb-0">{{user.email}}</p>
                         </div>
                       </div>
                       <hr>
@@ -72,25 +73,25 @@
                           <p class="mb-0">Phone</p>
                         </div>
                         <div class="col-sm-9">
-                          <p class="text-muted mb-0">(097) 234-5678</p>
+                          <p class="text-muted mb-0">{{user.phoneNumber}}</p>
                         </div>
                       </div>
                       <hr>
-                      <div class="row">
+                      <!-- <div class="row">
                         <div class="col-sm-3">
                           <p class="mb-0">Mobile</p>
                         </div>
                         <div class="col-sm-9">
-                          <p class="text-muted mb-0">(098) 765-4321</p>
+                          <p class="text-muted mb-0">{{user.phoneNumber}}</p>
                         </div>
-                      </div>
-                      <hr>
+                      </div> -->
+                      <!-- <hr> -->
                       <div class="row">
                         <div class="col-sm-3">
                           <p class="mb-0">Address</p>
                         </div>
                         <div class="col-sm-9">
-                          <p class="text-muted mb-0">Bay Area, San Francisco, CA</p>
+                          <p class="text-muted mb-0">{{user.address}}</p>
                         </div>
                       </div>
                     </div>
@@ -128,7 +129,7 @@
                       <div class="card mb-4 mb-md-0">
                         <div class="card-body">
                           <h1 class="mb-2"><span class="text-primary font-italic me-1">Account No.</span></h1>
-                          <p class="fw-bold fs-4" >4332 9893 234332</p>
+                          <p class="fw-bold fs-4" >{{user.cnic}}</p>
                           <p class="mb-1" style="font-size: .77rem;">Web Design</p>
                           <div class="progress rounded" style="height: 5px;">
                             <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80"
