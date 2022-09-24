@@ -32,8 +32,9 @@ export class LoginpageComponent implements OnInit {
     this.loginservice.PostLoginUser(login).subscribe(x =>{
       console.log(x);
       if(x){
+        this.loginservice.user = x;
         this.form.reset();
-        this.router.navigate(['/myaccount', x])
+        this.router.navigate(['/myaccount', x]);
       }
       else{
         alert('please enter valid email and password')

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Route, Router } from '@angular/router';
+import { LoginService } from 'src/app/shared/login.service';
 
 @Component({
   selector: 'app-myaccount',
@@ -8,7 +9,7 @@ import { ActivatedRoute, Route, Router } from '@angular/router';
 })
 export class MyaccountComponent implements OnInit {
   user: any;
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, public login: LoginService) { }
 
   ngOnInit(): void {
    

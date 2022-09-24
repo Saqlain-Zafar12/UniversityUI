@@ -10,10 +10,10 @@
                     <div class="card-body text-center">
                       <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar"
                         class="rounded-circle img-fluid" style="width: 150px;">
-                      <h5 class="my-3">{{ user.firstName}} {{ user.lastName }}</h5>
+                      <h5 class="my-3">{{ this.login.user.firstName}} {{ this.login.user.lastName }}</h5>
                       
-                      <p class="text-muted mb-1">{{user.cnic}}</p>
-                      <p class="text-muted mb-4">{{user.address}}</p>
+                      <p class="text-muted mb-1">{{this.login.user.cnic}}</p>
+                      <p class="text-muted mb-4">{{this.login.user.address}}</p>
                       <!-- <div class="d-flex justify-content-center mb-2">
                         <button type="button" class="btn btn-primary">Follow</button>
                         <button type="button" class="btn btn-outline-primary ms-1">Message</button>
@@ -55,7 +55,7 @@
                           <p class="mb-0">Full Name</p>
                         </div>
                         <div class="col-sm-9">
-                          <p class="text-muted mb-0">{{user.firstName}} {{user.lastName}}</p>
+                          <p class="text-muted mb-0">{{this.login.user.firstName}} {{this.login.user.lastName}}</p>
                         </div>
                       </div>
                       <hr>
@@ -64,7 +64,7 @@
                           <p class="mb-0">Email</p>
                         </div>
                         <div class="col-sm-9">
-                          <p class="text-muted mb-0">{{user.email}}</p>
+                          <p class="text-muted mb-0">{{this.login.user.email}}</p>
                         </div>
                       </div>
                       <hr>
@@ -73,7 +73,7 @@
                           <p class="mb-0">Phone</p>
                         </div>
                         <div class="col-sm-9">
-                          <p class="text-muted mb-0">{{user.phoneNumber}}</p>
+                          <p class="text-muted mb-0">{{this.login.user.phoneNumber}}</p>
                         </div>
                       </div>
                       <hr>
@@ -82,7 +82,7 @@
                           <p class="mb-0">Mobile</p>
                         </div>
                         <div class="col-sm-9">
-                          <p class="text-muted mb-0">{{user.phoneNumber}}</p>
+                          <p class="text-muted mb-0">{{this.login.user.phoneNumber}}</p>
                         </div>
                       </div> -->
                       <!-- <hr> -->
@@ -91,7 +91,7 @@
                           <p class="mb-0">Address</p>
                         </div>
                         <div class="col-sm-9">
-                          <p class="text-muted mb-0">{{user.address}}</p>
+                          <p class="text-muted mb-0">{{this.login.user.address}}</p>
                         </div>
                       </div>
                     </div>
@@ -129,7 +129,7 @@
                       <div class="card mb-4 mb-md-0">
                         <div class="card-body">
                           <h1 class="mb-2"><span class="text-primary font-italic me-1">Account No.</span></h1>
-                          <p class="fw-bold fs-4" >{{user.cnic}}</p>
+                          <p class="fw-bold fs-4" >{{this.login.user.cnic}}</p>
                           <p class="mb-1" style="font-size: .77rem;">Web Design</p>
                           <div class="progress rounded" style="height: 5px;">
                             <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80"

@@ -8,6 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class LoginService {
 
+  user: any;
   constructor(private http: HttpClient) { }
 
   readonly baseURL = 'https://localhost:7291/api/Login'
