@@ -8,34 +8,41 @@
             <p class="fw-bold mb-4">Put Your Info</p>
             <h6>Transaction</h6>
           </div>
-          <form action="">
+          <form  [formGroup]="form" (ngSubmit)="transferAmount()">
             
 
             <div class="row mb-4">
               <div class="col-12">
                 <div class="form-outline">
-                  <input type="text" id="formControlLgXM" class="form-control form-control-lg"
+                  <input type="text" id="formControlLgXM" formControlName="AccountNumber" class="form-control form-control-lg"
                     value="1234 5678 1234 5678" />
-                  <label class="form-label" for="formControlLgXM">Card Number</label>
+                  <label class="form-label" for="formControlLgXM">Account Number</label>
                 </div>
               </div>
               <div class="col-12">
                 <div class="form-outline">
-                  <input type="text" id="formControlLgXM" class="form-control form-control-lg"
+                  <input type="number" formControlName="Amount"  id="formControlLgXM" class="form-control form-control-lg"
                     value="example@gmail.com" />
-                  <label class="form-label" for="formControlLgXM">EMAIL</label>
+                  <label class="form-label" for="formControlLgXM">Your Money</label>
                 </div>
               </div>
               <div class="col-12">
                 <div class="form-outline">
-                  <input type="password" id="formControlLgXM" class="form-control form-control-lg"
+                  <input type="email" formControlName="Email"  id="formControlLgXM" class="form-control form-control-lg"
+                    value="example@gmail.com" />
+                  <label class="form-label" for="formControlLgXM">Email</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-outline">
+                  <input type="password" formControlName="Password" id="formControlLgXM" class="form-control form-control-lg"
                     value="*****" />
                   <label class="form-label" for="formControlLgXM">Password</label>
                 </div>
               </div>
             </div>
             
-            <button class="btn btn-success btn-lg btn-block" routerLink="/success">Transfer your money</button>
+            <button type="submit" class="btn btn-success btn-lg btn-block">Transfer your money</button>
           </form>
         </div>
       </div>

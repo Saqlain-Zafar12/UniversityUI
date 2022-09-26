@@ -30,9 +30,10 @@ export class LoginpageComponent implements OnInit {
     login.Password = password;
 
     this.loginservice.PostLoginUser(login).subscribe(x =>{
-      console.log(x);
+      // console.log(x);
       if(x){
-        this.loginservice.user = x;
+        this.loginservice.user = x.registration;
+        this.loginservice.transaction = x.transaction;
         this.form.reset();
         this.router.navigate(['/myaccount', x]);
       }
@@ -40,6 +41,9 @@ export class LoginpageComponent implements OnInit {
         alert('please enter valid email and password')
       }
     })
+
+
+
   }
 
 }

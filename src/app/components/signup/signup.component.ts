@@ -32,9 +32,15 @@ export class SignupComponent implements OnInit {
     let { firstname, lastname, birthday, cnic, address, email, phone, password, confirmpassword }  = this.form.value;
 
     let register = new Register(0, firstname, lastname, birthday, cnic, address, email, phone, password, confirmpassword, '');
-
     this.service.RegisterUser(register).subscribe(x=> {
+
+      if(x==null)
+      {
+        alert("Email Already Exist: Enter right Email-Id");
+      }
       this.router.navigateByUrl('/login');
+
+
     });
   }
 

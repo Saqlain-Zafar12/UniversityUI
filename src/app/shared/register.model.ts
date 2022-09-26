@@ -11,7 +11,8 @@ export class Register {
     confirmPassword: string;
     gender: string;
 
-    constructor(id: number = 0, firstName: string = '', lastName: string = '', birthday: string = '', cnic: string = '', address: string = '', email: string = '', phoneNumber: string = '', password: string = '', confirmPassword: string = '', gender: string = ''){
+    constructor(id: number = 0, firstName: string = '', lastName: string = '', birthday: string = '', cnic: string = '', address: string = '', email: string = '', phoneNumber: string = '', password: string = '', confirmPassword: string = '', gender: string = '')
+    {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;

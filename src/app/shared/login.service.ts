@@ -9,11 +9,20 @@ import { Observable } from 'rxjs';
 export class LoginService {
 
   user: any;
+  transaction: any;
+
+  
+
   constructor(private http: HttpClient) { }
 
   readonly baseURL = 'https://localhost:7291/api/Login'
 
   PostLoginUser(login: Login): Observable<any> {
     return this.http.post(this.baseURL, login);
+  }
+
+  getByEmail(): Observable<any>{
+
+    return this.http.get(this.baseURL);
   }
 }
